@@ -24,7 +24,8 @@ Instructions:
 4. Run it once with the following command <code>java -jar ~/mc-server/server.jar</code>
 5. Change the value <code>false</code> to <code>true</code> in <code>~/mc-server/eula.txt</code>
 6. Make any changes to the <code>server.properties</code> file you desire
-7. Run the following command <code>docker-compose up --force-recreate --build -d</code>
+7. Run the following command <code>docker-compose up --force-recreate --build -d</code> where the docker-compose.yml
+   file is located
 8. ???
 9. Success! A message should pop up in the discord channel whose ID you provided in the .env file with the IP-address
    to the server so people can join.

@@ -1,7 +1,16 @@
 ## Server Autostart
 
+This project is a discord bot combined with an automatically restarting minecraft server.
+
+The Discord bot will once per "session" send a message to a channel of your choosing with the IP-address of the server.
+If the server for any reason crashes, it should automatically restart immediately.
+
+The discord bot doesn't need to be configured for the auto-restart to work, but could be useful if you don't
+have a static IP-address to automatically notify people of the new IP-address.
+
 Requirements:
 
+* Docker & docker-compose (usually installed together)
 * Java (only tested with 17)
 * Minecraft server .jar file (named server.jar)
 * Discord bot token (used for the notifier)

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  notifier:
+    build: .
+    volumes:
+      - .:/build_src
+    env_file:
+      - .env
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ~/mc-server:/server
